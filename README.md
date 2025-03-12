@@ -1,4 +1,4 @@
-Link WEB : 
+Link WEB : https://ffaawwaazz.github.io/WEB-Profil-Perusahaan/
 # WEB-Profil-Perusahaan
 
 Berikut adalah penjelasan kode HTML, CSS, dan JavaScript yang digunakan dalam proyek **NIKE Profile**:
