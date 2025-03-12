@@ -1,6 +1,4 @@
-<img src="https://github.com/ffaawwaazz/WEB-Profil-Perusahaan/blob/main/SS.png
-alt="Pandas" width="60" height="60">
-
+Link WEB : 
 # WEB-Profil-Perusahaan
 
 Berikut adalah penjelasan kode HTML, CSS, dan JavaScript yang digunakan dalam proyek **NIKE Profile**:
