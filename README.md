@@ -1,4 +1,5 @@
 <img src="https://github.com/ffaawwaazz/WEB-Profil-Perusahaan/blob/main/SS.png
+alt="Pandas" width="60" height="60">
 
 # WEB-Profil-Perusahaan
 
