@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NIKE Profile</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #131921;
+            color: #ffffff;
+            line-height: 1.6;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+            background: #232f3e;
+        }
+
+        nav a {
+            color: #ffffff;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 16px;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        .container {
+            padding: 40px;
+            text-align: left;
+        }
+
+        .banner img {
+            width: 100%;
+            max-height: 400px;
+            object-fit: cover;
+            border-radius: 8px;
+        }
+
+        .info-boxes {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 40px;
+        }
+
+        .box {
+            background: #37475a;
+            padding: 20px;
+            border-radius: 8px;
+            flex: 1;
+            margin: 0 10px;
+            text-align: center;
+        }
+
+        .box h3 {
+            color: #bcbdc0;
+        }
+
+        .box img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+            margin-bottom: 15px;
+        }
+
+        .thumbnails {
+            display: flex;
+            justify-content: center;
+            margin-top: 10px;
+        }
+
+        .thumbnails img {
+            width: 50px;
+            height: 50px;
+            margin: 5px;
+            cursor: pointer;
+            border-radius: 5px;
+            border: 2px solid transparent;
+        }
+
+        .thumbnails img:hover {
+            border-color: #ffffff;
+        }
+
+        .logo {
+            font-size: 28px;
+            font-weight: bold;
+            color: #ffffff;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #232f3e;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="logo">NIKE</div>
+        <nav>
+            <a href="#about-us">About Us</a>
+            <a href="#vision-mission">Vision & Mission</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <div class="container">
+        <div class="banner">
+            <img src="NIKE banner.jpg" alt="NIKE Banner">
+        </div>
+
+        <section id="about-us">
+            <h2>About NIKE</h2>
+            <p>Nike was founded in 1964 by Phil Knight and Bill Bowerman under the name Blue Ribbon Sports. The company later changed its name to Nike in 1971. Knight was inspired to establish Nike after visiting the Onitsuka factory (now Asics) in Japan in 1962. He and Bowerman began distributing Onitsuka Tiger sports shoes, which were known for their high quality and affordable price. In their partnership, Knight focused on the business side of the company, while Bowerman was involved in designing the shoes. The Nike "Swoosh" logo was created in 1971 by Carolyn Davidson, a graphic design student at Portland State University. The logo represents the wing of Nike, the Greek goddess of victory. </p>
+            <p>Nike is one of the most iconic sportswear brands in the world, with its main products including shoes, apparel, and sports equipment. The company has been operating in Indonesia since 1988. Additionally, Nike's famous slogan, "Just Do It," has become one of the most recognizable marketing phrases globally, symbolizing motivation, determination, and success. </p>
+        </section>
+
+        <div class="info-boxes">
+            <div class="box">
+                <img id="mainImage1" src="AR1 W.png" alt="Nike Air Force 1">
+                <h3>Nike Air Force 1</h3>
+                <p>Originally released in 1982 as a basketball shoe, the Air Force 1 remains iconic with its classic design and Air cushioning technology. It is still widely popular as a casual sneaker today.</p>
+                <div class="thumbnails">
+                    <img src="AR1 W.png" onclick="changeImage('mainImage1', 'AR1 W.png')">
+                    <img src="AR1 B.png" onclick="changeImage('mainImage1', 'AR1 B.png')">
+                </div>
+            </div>
+
+            <div class="box">
+                <img id="mainImage2" src="AJ 1 RED.png" alt="Nike Air Jordan">
+                <h3>Nike Air Jordan</h3>
+                <p>A sneaker line created in collaboration with NBA legend Michael Jordan since 1984. Known for its stylish design and continuous technological innovation, Air Jordans are favorites in both basketball and streetwear culture.</p>
+                <div class="thumbnails">
+                    <img src="AJ 1 RED.png" onclick="changeImage('mainImage2', 'AJ 1 RED.png')">
+                    <img src="AJ 1 GREY.png" onclick="changeImage('mainImage2', 'AJ 1 GREY.png')">
+                    <img src="AJ 1 BLACK.png" onclick="changeImage('mainImage2', 'AJ 1 BLACK.png')">
+                </div>
+            </div>
+
+            <div class="box">
+                <img id="mainImage3" src="NAMP Y.png" alt="Nike Air Max">
+                <h3>Nike Air Max</h3>
+                <p>Introduced in 1987, the Air Max is famous for its visible Air cushioning in the sole. It is loved for its comfort, futuristic design, and strong presence in fashion trends.</p>
+                <div class="thumbnails">
+                    <img src="NAMP Y.png" onclick="changeImage('mainImage3', 'NAMP Y.png')">
+                    <img src="NAMP O.png" onclick="changeImage('mainImage3', 'NAMP O.png')">
+                    <img src="NAMP B.png" onclick="changeImage('mainImage3', 'NAMP B.png')">
+                </div>
+            </div>
+        </div>
+
+        <section id="contact">
+            <h2>Contact Us</h2>
+            <p>Address: Find Our Nearest Store</p>
+            <p>Email: media.relations@nike.com</p>
+            <p>Phone: 001-803-65-6453</p>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 NIKE. All Rights Reserved.</p>
+    </footer>
+
+    <script>
+        function changeImage(mainImageId, newImageSrc) {
+            document.getElementById(mainImageId).src = newImageSrc;
+        }
+    </script>
+</body>
+
+</html>
