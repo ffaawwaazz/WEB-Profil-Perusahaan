@@ -216,4 +216,4 @@ header {
 - **CSS** → Memberikan desain dan tampilan responsif.
 - **JavaScript** → Menambahkan fitur interaktif, seperti mengganti gambar produk.
 
-Itulah penjelasan kode proyek **NIKE Profile**. Jika ada yang ingin diperbaiki atau ditambahkan, beri tahu saya! 🚀
+Itulah penjelasan kode proyek **NIKE Profile**. 🚀
